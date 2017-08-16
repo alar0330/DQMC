@@ -1,0 +1,7 @@
+# GIT ignore files
+_old_*/
+bin/
+*.backup
+*.exe
+*.bin
+*~
