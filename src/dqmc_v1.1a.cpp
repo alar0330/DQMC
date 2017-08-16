@@ -38,12 +38,6 @@ using std::endl;
 
 typedef double (*ptrV)(const Walker&);
 
-struct MultReturn {
-  unsigned d;
-  ptrV pV;
-  double* iX0;
-};
-
 std::tuple<unsigned, ptrV, double*> processUserPrompt(const int);
 double runSim(int, int, double, double, unsigned, ptrV, double*, unsigned);
 
