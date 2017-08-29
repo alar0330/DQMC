@@ -28,11 +28,11 @@ inline double potentialH2p(const Walker& w) {
   static const double R1[3] = {0,0,1};
   double v(0);
   double v2(0);
-  
-  v = v2 = 0;
+
   for(unsigned d = 0; d < 3; ++d) {
     v  += (w.m_r[d]-R1[d])*(w.m_r[d]-R1[d]);
     v2 += (w.m_r[d]+R1[d])*(w.m_r[d]+R1[d]);
   }
+
   return -1.0 / sqrt(v) - 1.0 / sqrt(v2) + 0.5;
 }

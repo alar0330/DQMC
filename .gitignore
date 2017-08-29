@@ -5,3 +5,8 @@ bin/
 *.exe
 *.bin
 *~
+tests/*
+obj/*
+*.out
+.vs/*
+DQMC.*
